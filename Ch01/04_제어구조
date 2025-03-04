@@ -1,0 +1,18 @@
+x = int(input("숫자를 입력하세요: "))
+
+if x > 0:
+    print("양수입니다")
+elif x < 0:
+    print("음수입니다")
+else:
+    print("0입니다.")
+
+print(x > 10)
+print(x < 10)
+print(x == x)
+
+age = int(input("나이를 입력하세요 : "))
+if age >= 18:
+    print("성인입니다.")
+else:
+    print("미성년자입니다.")

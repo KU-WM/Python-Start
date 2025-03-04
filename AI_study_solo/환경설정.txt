@@ -1,0 +1,6 @@
+pip install --upgrade pip
+
+tensorflow 설치
+    Anaconda로 가상환경 만들고 설치하기
+        
+    pip install tensorflow
