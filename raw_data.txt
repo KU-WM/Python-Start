@@ -1,0 +1,6 @@
+John,25,Male
+Alice,17,Female
+Bob,30,Male
+Charlie,19,Male
+Diana,16,Female
+Eva,22,Female
