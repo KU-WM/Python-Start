@@ -56,3 +56,21 @@ gamma 값의 일반적인 범위
     중간 값 (e.g., 0.1): 대부분의 일반적인 데이터에 적합.
 
     큰 값 (e.g., 1, 10): 세부 패턴을 정밀히 반영해야 하거나, 데이터가 명확히 분리되는 경우.
+
+
+C와 Gamma 동시 조정 테스트
+    from sklearn.model_selection import GridSearchCV
+    from sklearn.svm import SVC
+
+    # 파라미터 후보 설정
+    param_grid = {
+        'C': [0.1, 1, 10, 100],
+        'gamma': [0.0001, 0.001, 0.01, 0.1]
+    }
+
+    # SVM 모델과 GridSearchCV 사용
+    grid = GridSearchCV(SVC(), param_grid, cv=5, scoring='accuracy')
+    grid.fit(X_train, y_train)
+
+    # 최적의 파라미터 출력
+    print("Best Parameters:", grid.best_params_)

@@ -30,7 +30,18 @@ digit = datasets.load_digits()
 # grid.fit(digit.data, digit.target)
 # print("Best C value:", grid.best_params_['C'])
 
-s = svm.SVC(gamma=0.0001, C=50)
+# C와 Gamma를 둘다 찾는 방법
+# train데이터를 임의로 나누어 test로 사용하기 때문에 교차검증을 통해 찾아줌
+# param_grid = {
+#     'C': [0.1, 0.5, 1, 5, 10, 50, 100],
+#     'gamma': [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5]
+# }
+# grid = GridSearchCV(svm.SVC(), param_grid, cv=5, scoring='accuracy')
+# grid.fit(digit.data, digit.target)
+# print("Best Parameters:", grid.best_params_)
+
+
+s = svm.SVC(gamma=0.0005, C=10)
 s.fit(digit.data[:1790], digit.target[:1790])
 print(len(digit.data))
 

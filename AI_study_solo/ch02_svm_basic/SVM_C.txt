@@ -51,3 +51,21 @@ SVM에서 C 값의 범위는 데이터셋과 문제의 특성에 따라 달라�
     grid.fit(X_train, y_train)
 
     print("Best C value:", grid.best_params_['C'])
+
+
+C와 Gamma 동시 조정 테스트
+    from sklearn.model_selection import GridSearchCV
+    from sklearn.svm import SVC
+
+    # 파라미터 후보 설정
+    param_grid = {
+        'C': [0.1, 1, 10, 100],
+        'gamma': [0.0001, 0.001, 0.01, 0.1]
+    }
+
+    # SVM 모델과 GridSearchCV 사용
+    grid = GridSearchCV(SVC(), param_grid, cv=5, scoring='accuracy')
+    grid.fit(X_train, y_train)
+
+    # 최적의 파라미터 출력
+    print("Best Parameters:", grid.best_params_)
