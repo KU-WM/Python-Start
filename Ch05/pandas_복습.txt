@@ -1,0 +1,36 @@
+Pandat
+- 정의
+	- 데이터 분석을 도와주는 패키지 (라이브러리)
+
+- 목적 2
+	- EDA (데이터 분석)
+	- 전처리 (데이터 변환)
+
+- 구조
+	- Series
+	- DataFrame
+	- Index
+
+- 특징
+	- Numpy 기반 라이브러리 (100예제)
+		https://github.com/rougier/numpy-100
+		- Vectorization (연산 속도가 빠르다)
+		- Cython, OpenMP(멀티 CPU 연산, 병렬처리)
+		- 다양한 데이터 타입 지원 (날짜, 카테고리)
+	- 집계 연산 3가지
+		- groupto
+		- pivot_table
+		- crosstab
+	- 다양한 전처리 함수 지원
+		- 결측치 처리 (interpolate)
+		- 행/열 연산 (loc, iloc)
+			- 행
+				- loc -> 인덱스 명 (숫자, 문자)
+				- iloc -> 숫자 인덱스 값
+			- 열
+				- dict ("")
+				- attr (.)
+				- fancy indexing ([ ])
+				- select_dtypes -> 문자열 / 숫자
+
+
