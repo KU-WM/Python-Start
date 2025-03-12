@@ -1,0 +1,38 @@
+Ch01 - 파이썬 기초
+    - 변수선언, if, for
+
+Ch02 - 파이썬 기초 응용
+    - for, if, list function...
+
+
+Ch03 - 예외처리, 파일입출력, 모듈화
+    - try ~ except, with open...
+
+Ch04 - 클래스와 객체, 함수
+    - Class, def
+
+
+Ch05 - 데이터 전처리 및 가공
+    - Pandas
+
+
+Ch06 - 데이터 시각화
+    - Matplotlib.pyplot, Seaborn
+
+
+Ch07 - 데이터 처리 및 가공 실습, API활용, 웹 스크래핑 가이드
+    - Numpy
+
+
+
+
+
+
+
+
+
+
+# 인터페이스
+    A와 B가 접하는 접점
+        ex) 유저 인터페이스 
+            유저가 시스템과 접촉할 수 있는 접점 - 화면, 디스플레이 등
