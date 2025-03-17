@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBTI 성격 유형 검사</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="main-page">
+            <h1>NBTI 성격 유형 검사</h1>
+            <button id="start-button">검사 시작</button>
+        </div>
+        <div id="test-page" style="display:none;">
+            <h2>질문 <span id="question-number"></span>/10</h2>
+            <p id="question-text"></p>
+            <div id="answers">
+                <label><input type="radio" name="answer" value="1"> 1</label>
+                <label><input type="radio" name="answer" value="2"> 2</label>
+                <label><input type="radio" name="answer" value="3"> 3</label>
+                <label><input type="radio" name="answer" value="4"> 4</label>
+                <label><input type="radio" name="answer" value="5"> 5</label>
+            </div>
+            <button id="next-button">다음</button>
+        </div>
+        <div id="result-page" style="display:none;">
+            <h2>결과</h2>
+            <p id="result-text"></p>
+            <button id="retry-button">다시 하기</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
