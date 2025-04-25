@@ -12,6 +12,9 @@ def cleaning_text(text):
 
       return result if result.strip() != '' else None
 
+def remove_stopwords(tokens, stopwords):
+    return [token for token in tokens if token not in stopwords]
+  
 def mecab_tokenizer(text):
     mecab = Mecab()
     return mecab.morphs(text)
