@@ -2,7 +2,9 @@
 /Ch16/dataset2
 
 /**/*.pth
+/**/*.safetensors
 
 /Ch19/dataset5
 
 /Ch20/images
+

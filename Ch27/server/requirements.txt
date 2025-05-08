@@ -1,0 +1,10 @@
+python-multipart
+transformers
+torch
+fastapi
+uvicorn
+pydantic
+opencv-python
+streamlit
+watchdog
+locust
